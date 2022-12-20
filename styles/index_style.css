@@ -7,12 +7,16 @@
     background-image: url("../images/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+}
+.header-color {
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(12px);
 }
 .header {
     position: fixed;
     width: 100%;
     padding: 20px 0;
+    z-index: 10;
 }
 
 .header .container {
@@ -74,20 +78,27 @@
     display: none;
     position: absolute;
 }
+.dropdown-color {
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(12px);
+}
 
 .dropdown:hover .dropdown-content{
     display: flex;
     flex-direction: column;
 }
 /*banner*/
+.banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .banner .title {
-    position: absolute;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    top: 40%;
-    left: 32%;
 }
 
 .banner .title h1 {
@@ -141,22 +152,4 @@
     float: left;
     top: 45%;
     left: 0;
-}
-/*second block*/
-.middle-two {
-    background-image: url("../images/building2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.block-two {
-    position: relative;
-}
-.block-two h1 {
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    width: max-content;
-    position: absolute;
-    top: 45%;
-    left: 25%;
-
 }
